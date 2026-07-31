@@ -1,0 +1,6 @@
+{
+  "name": "Dhaloota Warqii",
+  "description": "Dhaloota Warqii: Sagantaa Hifzii fi Muraja'aa Qur'aana Barattootaa",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

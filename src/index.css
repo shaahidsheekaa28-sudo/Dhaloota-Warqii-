@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide all non-printable UI components */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Show only the print container and its contents */
+  .print-only, .print-only * {
+    visibility: visible;
+  }
+  
+  .print-only {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block !important;
+    padding: 20px !important;
+    background-color: white !important;
+    color: black !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  /* Prevent awkward page breaks inside tables */
+  table {
+    page-break-inside: auto;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+}
